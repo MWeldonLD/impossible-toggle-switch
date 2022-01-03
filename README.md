@@ -55,7 +55,7 @@ Create a Feature Flag
 
 ![Screenshot of SDK code](img/launchdarkly-sdk.png)
 
-In a script tag implementation Self-hosting the LaunchDarkly SDK is a recommended best practice for production, as it will not introduce any critical dependencies on third-party service providers such as unpkg or jsDelivr
+In a script tag implementation, self-hosting the LaunchDarkly SDK is a recommended best practice for production as it will not introduce any critical dependencies on third-party service providers such as unpkg or jsDelivr
 
 
 
@@ -76,7 +76,7 @@ In a script tag implementation Self-hosting the LaunchDarkly SDK is a recommende
 
 # Test Your Feature Flag
 ## Before Turning On Your Feature Flag
-- Let's first run `index.hmtl` in VSCode before enabling your feature flag, this will run the project without the new feature being displayed for the user
+- Let's first run `index.html` in VSCode before enabling your feature flag, this will run the project without the new feature being displayed for the user
 - The LaunchDarkly `new-toggle-switch` flag value is evaluated as False and therefore the new feature is not rendered for the user
 
 ![Feature Flag Off](img/feature-flag-off.png)
@@ -87,7 +87,7 @@ In a script tag implementation Self-hosting the LaunchDarkly SDK is a recommende
 
 ![Turn on Feature Flag](img/turn-on-feature-flag.gif)
 
-- Now let's run `index.hmtl` in VSCode with your feature flag turned on, this will run the project and display the new feature for the user
+- Now let's run `index.html` in VSCode with your feature flag turned on, this will run the project and display the new feature for the user
 - The LaunchDarkly `new-toggle-switch` flag value is evaluated as True and the new feature is now rendered for the user
 
 ![Feature Flag On](img/feature-flag-on.png)
@@ -108,9 +108,11 @@ If you followed the steps above, your project is already sending user data to La
 
 ![User Identifiers](img/user-identifiers.png)
 
-- Optional, edit the (name + key) values in your `script.js` as shown in the example below and re-run `index.html` to send additional unique users to LaunchDarkly for targeting (additional user identifiers and unique key hashing are also available)
+- Optional, try editing the (name + key) values in your `script.js` as shown in the example below
 
 ![Additional User](img/additional-user.png)
+
+- Now, re-run `index.html` to send another unique user to LaunchDarkly for targeting purposes (Note: Additional user identifier attributes and unique key hashing are available)
 
 
 
