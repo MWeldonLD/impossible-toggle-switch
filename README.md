@@ -55,7 +55,7 @@ Create a Feature Flag
 
 ![Screenshot of SDK code](img/launchdarkly-sdk.png)
 
-Self-hosting the LaunchDarkly SDK in a script tag implementation is a recommended best practice for production, as it will not introduce any critical dependencies on third-party service providers such as unpkg or jsDelivr
+In a script tag implementation Self-hosting the LaunchDarkly SDK is a recommended best practice for production, as it will not introduce any critical dependencies on third-party service providers such as unpkg or jsDelivr
 
 
 
@@ -67,7 +67,7 @@ Self-hosting the LaunchDarkly SDK in a script tag implementation is a recommende
 ![Client-side ID](img/client-side-id.png)
 
 ## Implement Client-side ID into Project
-- In VSCode, open `index.html` for editing and locate the below:
+- In VSCode, open `script.js` for editing and locate the below:
 ![Client-side ID Here](img/client-side-id-here.png)
 - Replace `YOUR CLIENT-SIDE ID HERE` with your environment-specific `Client-side ID` value copied from the previous step
 - Save your edit
@@ -104,11 +104,11 @@ LaunchDarkly additionally gives you enhanced controls to further de-risk any new
 ## Identifiers / User Data
 If you followed the steps above, your project is already sending user data to LaunchDarkly
 
-- The below code inside `index.html` is one example of defined User identifiers, the (name + key) are the identifying values sent to LaunchDarkly
+- The below code inside `script.js` is one example of defined User identifiers, the (name + key) are the identifying values sent to LaunchDarkly
 
 ![User Identifiers](img/user-identifiers.png)
 
-- Optional, edit the (name + key) values in your `index.html` as shown in the example below and re-run the project to send additional unique users to LaunchDarkly for targeting
+- Optional, edit the (name + key) values in your `script.js` as shown in the example below and re-run `index.html` to send additional unique users to LaunchDarkly for targeting (additional user identifiers and unique key hashing are also available)
 
 ![Additional User](img/additional-user.png)
 
