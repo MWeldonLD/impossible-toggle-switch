@@ -10,7 +10,6 @@ To set up this project yourself and recreate a LaunchDarkly feature flag with us
 
 
 
-
 # What You Will Need
 
 - A free [LaunchDarkly](https://launchdarkly.com/start-trial/) account
@@ -28,6 +27,7 @@ Download [this repository](https://github.com/MWeldonLD/impossible-toggle-switch
 Or make a clone of this project using the following command:
 
 `$ git clone https://github.com/MWeldonLD/impossible-toggle-switch.git`
+
 
 
 # Create Feature Flag in LaunchDarkly
@@ -88,14 +88,18 @@ In a script tag implementation, self-hosting the LaunchDarkly SDK is a recommend
 ![Turn on Feature Flag](img/turn-on-feature-flag.gif)
 
 - Now let's run `index.html` in VSCode with your feature flag turned on, this will run the project and display the new feature for the user
-- The LaunchDarkly `new-toggle-switch` flag value is evaluated as True and the new feature is now rendered for the user
+- The LaunchDarkly `new-toggle-switch` flag value is evaluated as True and the new feature is now rendered for the user as shown below
 
 ![Feature Flag On](img/feature-flag-on.png)
+
+
 
 ## Try The New Feature
 Now try testing the new feature... but watch out for the mischievous bear! 🐻
 
 ![animated.gif](img/animated.gif)
+
+
 
 # Targeting Your New Feature's Rollout
 ## Targeting Overview
