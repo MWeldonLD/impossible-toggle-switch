@@ -35,7 +35,6 @@ function renderld() {
         var feature = featureDiv.innerHTML = "";
     }
     labelDiv.replaceChild(document.createTextNode(label), labelDiv.firstChild);
-    featureDiv.replaceChild(document.createElement(feature), featureDiv.firstChild);
 
     // Console log for LaunchDarkly SDK connection checking
     console.log("SDK successfully connected! The value of new-toggle-switch is " + flagValue + " for " + user.name)
